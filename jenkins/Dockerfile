@@ -22,7 +22,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # ADD https://bootstrap.pypa.io/get-pip.py get-pip.py
-RUN python3 -m pip3 install  --break-system-packages ansible==2.9 \
+RUN python3 -m pip install  --break-system-packages ansible==2.9 \
         netaddr \
         docker \
         six
