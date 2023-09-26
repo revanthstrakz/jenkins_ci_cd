@@ -12,6 +12,7 @@ RUN apt-get update && \
         python3 \
         python3-setuptools \
         python3-full \
+        python3-pip \
         git \
         make \
         pkg-config \
