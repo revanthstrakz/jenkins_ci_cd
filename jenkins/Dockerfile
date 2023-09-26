@@ -11,6 +11,7 @@ RUN apt-get update && \
         docker.io \
         python3 \
         python3-setuptools \
+        python3-full \
         git \
         make \
         pkg-config \
@@ -21,7 +22,7 @@ RUN apt-get update && \
 
 ADD https://bootstrap.pypa.io/get-pip.py get-pip.py
 RUN python3 ./get-pip.py && \
-    pip install ansible==2.9 \
+    pipx install ansible==2.9 \
         netaddr \
         docker \
         six
