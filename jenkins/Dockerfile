@@ -21,7 +21,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # ADD https://bootstrap.pypa.io/get-pip.py get-pip.py
-RUN pip install ansible==2.9 \
+RUN pip3 install ansible==2.9 \
         netaddr \
         docker \
         six
