@@ -20,8 +20,9 @@ RUN apt-get update && \
         u-boot-tools && \
     rm -rf /var/lib/apt/lists/*
 
-# ADD https://bootstrap.pypa.io/get-pip.py get-pip.py
-RUN pipx install ansible==2.9 \
+ADD https://bootstrap.pypa.io/get-pip.py get-pip.py
+RUN python3 ./get-pip.py && \
+    pip install ansible==2.9 \
         netaddr \
         docker \
         six
