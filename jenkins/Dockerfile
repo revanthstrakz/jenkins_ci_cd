@@ -3,7 +3,7 @@ FROM jenkins/jenkins
 USER root
 
 # To be set to docker group, by default 134
-ARG dockergid=134
+# ARG dockergid=134
 RUN groupadd --gid 134 docker
 
 RUN apt-get update && \
