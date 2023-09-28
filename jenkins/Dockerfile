@@ -4,7 +4,7 @@ USER root
 
 # To be set to docker group, by default 134
 ARG dockergid=134
-RUN groupadd --gid ${dockergid} docker
+RUN groupadd --gid 134 docker
 
 RUN apt-get update && \
     apt-get install -y \
